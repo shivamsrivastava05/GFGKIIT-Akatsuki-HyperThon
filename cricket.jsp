@@ -1,4 +1,4 @@
-<page language="html" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" >
+<%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-XD3oQ1bUlYmyGM/KxFqIIR5InQ9nDGdtyLwa1eHrP2GnvKH+B5FU9gTcZEkcJkgn" crossorigin="anonymous">
-    <jsp:include page="/common_css.html" />
+    
 
     <style>
         body {
@@ -36,6 +36,16 @@
             transform: scale(1.1);
             z-index: 10;
         }
+        body
+    {  
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+    }
+.main_body
+	{flex-grow:	1;flex-shrink:1;flex-basis:0;
+	
+	}
     </style>
 </head>
 <body>
